@@ -1,0 +1,134 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--book-white);
+  border-bottom: 1px solid rgba(11, 11, 11, 0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoPlaceholder {
+  width: 50px;
+  height: 50px;
+  background-color: var(--card-bg);
+  border: 2px solid var(--book-red);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--book-red);
+  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--book-black);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.githubBtn,
+.loginBtn,
+.logoutBtn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  font-size: 0.95rem;
+}
+
+.githubBtn {
+  background-color: var(--book-black);
+  color: var(--book-white);
+}
+
+.githubBtn:hover {
+  background-color: #2a2a2a;
+  transform: translateY(-1px);
+}
+
+.loginBtn {
+  background-color: var(--book-red);
+  color: var(--book-white);
+}
+
+.loginBtn:hover {
+  background-color: #a81919;
+  transform: translateY(-1px);
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--book-red), #e63946);
+  color: var(--book-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.username {
+  font-weight: 500;
+  color: var(--book-black);
+}
+
+.logoutBtn {
+  background-color: transparent;
+  color: var(--book-red);
+  border: 1px solid var(--book-red);
+}
+
+.logoutBtn:hover {
+  background-color: var(--book-red);
+  color: var(--book-white);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .actions {
+    gap: 0.5rem;
+  }
+
+  .githubBtn,
+  .loginBtn,
+  .logoutBtn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}

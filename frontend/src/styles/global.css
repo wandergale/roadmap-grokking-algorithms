@@ -1,0 +1,57 @@
+:root {
+  --book-red: #c91f1f;
+  --book-black: #0b0b0b;
+  --book-white: #ffffff;
+  --card-bg: rgba(201, 31, 31, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.9s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--book-white);
+  color: var(--book-black);
+  line-height: 1.6;
+  transition: background-color var(--transition-slow);
+}
+
+body.bg-active {
+  background-color: #f5f5f5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--book-red);
+  outline-offset: 2px;
+}

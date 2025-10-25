@@ -13,7 +13,7 @@ const App: React.FC = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/chapter/:id" element={<Chapter />} />
+          <Route path="/chapters/:id" element={<Chapter />} />
         </Routes>
       </Router>
     </AuthProvider>

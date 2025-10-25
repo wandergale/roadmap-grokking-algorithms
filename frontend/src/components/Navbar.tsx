@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         </div>
         <div className={styles.actions}>
           <a
-            href="https://github.com"
+            href="https://github.com/wandergale/roadmap-grokking-algorithms"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.githubBtn}

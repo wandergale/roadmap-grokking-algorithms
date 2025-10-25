@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import AuthModal from './AuthModal';
 import styles from './Navbar.module.css';
+import logo from '../../public/book-logo.jpg';
 
 const Navbar: React.FC = () => {
   const { user, isAuthenticated, logout } = useAuth();
@@ -20,7 +21,9 @@ const Navbar: React.FC = () => {
     <>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
-          <div className={styles.logoPlaceholder}>GA</div>
+          <a href="/" className={styles.logo_img}>
+            <img src={logo} alt="Book Logo" />
+          </a>
           <h1 className={styles.title}>Grokking Algorithms</h1>
         </div>
         <div className={styles.actions}>

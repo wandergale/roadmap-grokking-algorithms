@@ -195,17 +195,5 @@ The frontend will run on `http://localhost:3000`
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 
-## Security Notes
-
-- Change the `JWT_SECRET` in production
-- Use environment variables for sensitive data
-- Passwords are hashed using bcrypt
-- API routes are protected with JWT middleware
-- CORS is configured for development
-
-## License
-
-MIT
-
 ## Author
 * **Wanderson Costa Oliveira** - *Full Stack Developer*

@@ -29,6 +29,7 @@ A visual roadmap web application for the book "Grokking Algorithms" by Aditya Bh
 - PostgreSQL
 - JWT (jsonwebtoken)
 - bcrypt
+- MySQL
 
 ## Project Structure
 
@@ -207,5 +208,4 @@ The frontend will run on `http://localhost:3000`
 MIT
 
 ## Author
-
-Built with ❤️ for algorithm learners
+* **Wanderson Costa Oliveira** - *Full Stack Developer*
